@@ -79,7 +79,7 @@ function DownloadButton() {
 
 
 
-  const imageURL = '/public/assets/ue.png';
+  const imageURL = '/assets/ue.png';
 
   return (
 

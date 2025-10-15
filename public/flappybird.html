@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Flappy Bird (Java → Web)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Use a stable CheerpJ 4.2 loader -->
+  <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
+  <style>html,body{margin:0;background:#0b1220;height:100%;}</style>
+  <!-- Silence the favicon 404 -->
+  <link rel="icon" href="data:,">
+</head>
+<body>
+<script>
+  (async () => {
+    // Java 17 + disable AOT so it won't look for FlappyBird.jar.js
+    await cheerpjInit({ version: 17, aot: false });
+
+    // Create an AWT/Swing surface
+    cheerpjCreateDisplay(800, 600);
+
+    try {
+      // Your JAR has Main-Class: Main
+      await cheerpjRunJar("/app/FlappyBird.jar");
+      console.log("Started via RunJar");
+    } catch (e) {
+      console.warn("RunJar failed, trying RunMain:", e);
+      await cheerpjRunMain("Main", "/app/FlappyBird.jar");
+      console.log("Started via RunMain");
+    }
+  })();
+</script>
+</body>
+</html>

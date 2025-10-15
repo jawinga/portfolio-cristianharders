@@ -12,12 +12,13 @@ import { LetsConnect } from './components/LetsConnect'
 import { TechStack } from './components/TechStack'
 import { IntroDescription } from './components/IntroDescription'
 import TechStackTerminal from './components/TechStackTerminal'
+import FlappyBirdEmbed from './components/FlappyBirdEmbed'
 
 const App = () => {
 
    function downloadCV(){
 
-    document.getElementById("id").href = '/public/assets/cristianharders-25-blue.pdf';
+    document.getElementById("id").href = '/assets/cristianharders-25-blue.pdf';
   }
 
 
@@ -32,6 +33,7 @@ const App = () => {
     <Experiences></Experiences>
     <Education></Education>
     <LetsConnect></LetsConnect>
+    <FlappyBirdEmbed></FlappyBirdEmbed>
 
     
 
@@ -81,7 +83,7 @@ const App = () => {
       },
       {
         title: "CV",
-        href: "/public/assets/cristianharders-25-blue.pdf",
+        href: "/assets/cristianharders-25-blue.pdf",
         icon: (
           <svg onClick={downloadCV} id='cv' class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
   <path fill-rule="evenodd" d="M13 11.15V4a1 1 0 1 0-2 0v7.15L8.78 8.374a1 1 0 1 0-1.56 1.25l4 5a1 1 0 0 0 1.56 0l4-5a1 1 0 1 0-1.56-1.25L13 11.15Z" clip-rule="evenodd"/>

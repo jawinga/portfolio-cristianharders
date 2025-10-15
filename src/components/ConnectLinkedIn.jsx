@@ -7,7 +7,7 @@ export function ConnectLinkedIn() {
       <PinContainer title="linkedin.com/in/cristianharders" href="https://www.linkedin.com/in/cristianharders/">
         <div className="flex basis-full flex-col p-6 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-blue-500/10 to-transparent" />
-          <div className="absolute inset-0 bg-[url(../../public/assets/linkedin.png)] bg-cover bg-center opacity-10" />
+          <div className="absolute inset-0 bg-[url(../../assets/linkedin.png)] bg-cover bg-center opacity-10" />
 
           <div className="relative z-10 flex flex-col h-full justify-between">
             <div>

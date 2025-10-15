@@ -189,7 +189,7 @@ export const experiences = [
       "Applied component-based architecture and scalable styling practices to ensure long-term maintainability, reducing the company website’s homepage codebase by 25%."
       
     ],
-    logo: "../../public/assets/msm-logo.jpeg"
+    logo: "/assets/msm-logo.jpeg"
   },
   {
     title: "English Teacher",
@@ -200,7 +200,7 @@ export const experiences = [
     "Prepared personalized lessons and activities to enhance fluency and confidence.",
 
     ],
-    logo: "../../public/assets/campus-ingles.webp"
+    logo: "/assets/campus-ingles.webp"
 
   },
   {
@@ -213,6 +213,6 @@ export const experiences = [
       "Conducted user interviews, competitive analysis, and usability testing.",
       "Presented final prototypes to product teams in an international environment."
     ],
-    logo: "../../public/assets/memorisely_logo.jpeg"
+    logo: "/assets/memorisely_logo.jpeg"
   },
 ];

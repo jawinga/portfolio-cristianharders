@@ -110,7 +110,7 @@ function DownloadButton() {
       <p className="font-bold text-xl">Universidad Europea de Madrid</p>
       <p className="font-normal text-sm">Oct 2023 - Jun 2025</p>
     </DirectionAwareHover>
-    <Button label="Download Certificate of Higher Education" icon={<DownloadButton />} onClick={downloadCertificate} />  </div>
+    <Button label="Download Certificate of Higher Education" icon={DownloadButton} onClick={downloadCertificate} />  </div>
 
   {/* Right side — text */}
   

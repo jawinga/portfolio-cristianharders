@@ -1,8 +1,9 @@
 "use client"
+import VisibilitySection from "./VisibilitySection"
 
 export default function FlappyBirdEmbed() {
   return (
-    <div className="min-h-screen grid place-items-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4">
+      <VisibilitySection className="min-h-screen grid place-items-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4">
       {/* 4:3 box that scales responsively */}
       <div className="w-full max-w-[960px] rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: "4 / 3" }}>
         <iframe
@@ -12,6 +13,6 @@ export default function FlappyBirdEmbed() {
           allowFullScreen
         />
       </div>
-    </div>
+    </VisibilitySection>
   )
 }

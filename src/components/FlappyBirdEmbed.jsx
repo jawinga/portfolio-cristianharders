@@ -50,9 +50,16 @@ export default function FlappyBirdEmbed() {
     <VisibilitySection className="relative min-h-screen w-full overflow-hidden p-6">
       {/* Header */}
       <div className="w-full max-w-5xl mx-auto flex flex-col lg:items-center gap-10">
-        <h2 className="text-heading text-center text-4xl sm:text-5xl md:text-6xl leading-tight tracking-tight my-3">
+        <div className="flex flex-row justify-between align-baseline ">
+
+          <h2 className="text-heading text-center text-4xl sm:text-5xl md:text-6xl leading-tight tracking-tight my-3">
           Still around? I rebuilt Flappy Bird in Java — check it out!
         </h2>
+        <img src="/assets/logos/flappybird.png"></img>
+
+        </div>
+        
+
 
         <div className="flex flex-col items-start gap-3">
           {/* <p className="mb-3 font-extrabold text-neutral-200 text-xl">
@@ -69,6 +76,10 @@ export default function FlappyBirdEmbed() {
           <WarningBox
             icon={Warning}
             text="Click inside the Flappy Bird frame first so the game registers your input."
+          />
+          <WarningBox
+            icon={Warning}
+            text="If you are on a mobile device, you will encounter layout issues."
           />
       </div>
 

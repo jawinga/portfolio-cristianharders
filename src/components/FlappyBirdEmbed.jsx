@@ -4,6 +4,9 @@ import VisibilitySection from "./VisibilitySection"
 import Button from "./Button"
 
 export default function FlappyBirdEmbed() {
+
+
+
   function GithubIcon(props) {
     return (
       <svg viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg" {...props}>
@@ -27,7 +30,7 @@ export default function FlappyBirdEmbed() {
         viewBox="0 0 20 20"
         {...props}
       >
-        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
       </svg>
     )
   }
@@ -36,54 +39,85 @@ export default function FlappyBirdEmbed() {
   function WarningBox({ icon: Icon, text }) {
     return (
       <div
-      role="note"
-      aria-live="polite"
-      className="flex flex-row items-center justify-center gap-2 w-fit mx-auto rounded-xl border border-red-500 bg-red-100/80 text-red-800 px-3 py-2 shadow-lg backdrop-blur-sm"
+        role="note"
+        aria-live="polite"
+        className="flex flex-row items-center justify-center gap-2 w-fit mx-auto rounded-xl border border-red-500 bg-red-100/80 text-red-800 px-3 py-2 shadow-lg backdrop-blur-sm"
       >
-      {Icon && <Icon className="w-4 h-4 mx-auto" aria-hidden="true" />}
-      <p className="text-xl text-center">{text}</p>
+        {Icon && <Icon className="w-4 h-4 mx-auto" aria-hidden="true" />}
+        <p className="text-xl text-center">{text}</p>
       </div>
     )
   }
 
   return (
     <VisibilitySection className="relative min-h-screen w-full overflow-hidden p-6">
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px) translateX(0px) rotate(-5deg);
+          }
+          25% {
+            transform: translateY(-20px) translateX(10px) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-10px) translateX(-5px) rotate(5deg);
+          }
+          75% {
+            transform: translateY(-25px) translateX(5px) rotate(-2deg);
+          }
+        }
+
+        @keyframes flap {
+          0%, 100% {
+            transform: scaleY(1);
+          }
+          50% {
+            transform: scaleY(0.95);
+          }
+        }
+
+        @keyframes wiggle {
+          0%, 100% {
+            transform: rotate(-3deg);
+          }
+          50% {
+            transform: rotate(3deg);
+          }
+        }
+
+        .flappy-float {
+          animation: float 4s ease-in-out infinite;
+        }
+
+        .flappy-float:hover {
+          animation: float 2s ease-in-out infinite, wiggle 0.5s ease-in-out infinite;
+        }
+      `}</style>
+
       {/* Header */}
       <div className="w-full max-w-5xl mx-auto flex flex-col lg:items-center gap-10">
-        <div className="flex flex-row justify-between align-baseline ">
-
+        <div className="flex flex-row justify-between align-baseline items-center">
           <h2 className="text-heading text-center text-4xl sm:text-5xl md:text-6xl leading-tight tracking-tight my-3">
-          Still around? I rebuilt Flappy Bird in Java — check it out!
-        </h2>
-        <img src="/assets/logos/flappybird.png"></img>
-
+            Still around? I rebuilt Flappy Bird in Java!
+          </h2>
+          <img
+            src="/assets/logos/flappybird.png"
+            alt="Flappy Bird"
+            className="flappy-float transition-all duration-300 cursor-pointer hover:scale-110"
+          />
         </div>
-        
-
 
         <div className="flex flex-col items-start gap-3">
           {/* <p className="mb-3 font-extrabold text-neutral-200 text-xl">
             Still around? I rebuilt Flappy Bird in Java — check it out!
           </p> */}
 
-          <Button
-            label="Check it out"
-            icon={GithubIcon}
-            href="https://github.com/jawinga/FlappyBird"
-          />
+          <Button label="Check it out" icon={GithubIcon} href="https://github.com/jawinga/FlappyBird" />
         </div>
 
-          <WarningBox
-            icon={Warning}
-            text="Click inside the Flappy Bird frame first so the game registers your input."
-          />
-          <WarningBox
-            icon={Warning}
-            text="If you are on a mobile device, you will encounter layout issues."
-          />
+        <WarningBox icon={Warning} text="Click inside the Flappy Bird frame first so the game registers your input." />
+        <WarningBox icon={Warning} text="If you are on a mobile device, you will encounter layout issues." />
       </div>
-
-        
 
       {/* Game frame + overlay warning */}
       <div
@@ -98,7 +132,6 @@ export default function FlappyBirdEmbed() {
         />
 
         {/* Overlayed warning (click-to-focus tip) */}
-        
       </div>
     </VisibilitySection>
   )

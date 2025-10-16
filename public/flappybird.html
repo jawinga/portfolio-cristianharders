@@ -15,16 +15,13 @@
       align-items: center;
     }
   </style>
-  <!-- Silence the favicon 404 -->
   <link rel="icon" href="data:,">
 </head>
 <body>
 <script>
   (async () => {
-    // Java 17 + disable AOT so it won't look for FlappyBird.jar.js
     await cheerpjInit({ version: 17, aot: false });
 
-    // Create an AWT/Swing surface
     cheerpjCreateDisplay(800, 600);
 
     try {
@@ -37,6 +34,9 @@
       console.log("Started via RunMain");
     }
   })();
+
+  
+
 </script>
 </body>
 </html>

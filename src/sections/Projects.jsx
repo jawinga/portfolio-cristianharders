@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Project from "../components/Project";
+import Project from "../components/ui/cards/Project";
 import { myProjects } from "../constants";
 import { motion, useMotionValue, useSpring } from "motion/react";
 const Projects = () => {

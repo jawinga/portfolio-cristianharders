@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
-import HeroText from "../components/HeroText";
-import ParallaxBackground from "../components/ParallaxBackground";
+import HeroText from "../components/ui/text/HeroText";
+import ParallaxBackground from "../components/ui/misc/ParallaxBackground";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Float } from "@react-three/drei";
-import { Spinner } from "../components/Spinner";
-import { BackgroundBeamsWithCollision } from "../components/BackgroundBeamsWithCollision";
+import { BackgroundBeamsWithCollision } from "../components/ui/misc/BackgroundBeamsWithCollision";
 
 function Rig({ damp = 3, max = 0.6 }) {
   useFrame(({ camera, mouse }, dt) => {
@@ -30,7 +29,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home" className="flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space">
+    <section
+      id="home"
+      className="flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space"
+    >
       <HeroText />
       <ParallaxBackground />
 

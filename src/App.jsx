@@ -1,18 +1,17 @@
 import React from "react";
 import Navbar from "./sections/Navbar";
-import HeroText from "./components/HeroText";
+import HeroText from "./components/ui/text/HeroText";
 import Hero from "./sections/Hero";
 import { Canvas } from "@react-three/fiber";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Experiences from "./sections/Experiences";
-import { FloatingDock } from "./components/FloatingDock";
+import { FloatingDock } from "./components/ui/misc/FloatingDock";
 import Education from "./sections/Education";
-import { LetsConnect } from "./components/LetsConnect";
-import { TechStack } from "./components/TechStack";
-import { IntroDescription } from "./components/IntroDescription";
-import TechStackTerminal from "./components/TechStackTerminal";
-import FlappyBirdEmbed from "./components/FlappyBirdEmbed";
+import { LetsConnect } from "./components/ui/buttons/LetsConnect";
+import { IntroDescription } from "./components/ui/minor-sections/IntroDescription";
+import TechStackTerminal from "./components/ui/minor-sections/TechStackTerminal";
+import FlappyBirdEmbed from "./components/ui/minor-sections/FlappyBirdEmbed";
 import FeaturedProject from "./sections/FeaturedProject";
 
 const App = () => {

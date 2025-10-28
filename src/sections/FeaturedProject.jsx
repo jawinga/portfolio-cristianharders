@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../components/Button";
-import SheetVisionArchitecture from "../components/SheetVisionArchitecture";
-import SheetVisionTechStack from "../components/SheetVisionTechStack";
+import Button from "../components/ui/buttons/Button";
+import SheetVisionArchitecture from "../components/ui/minor-sections/SheetVisionArchitecture";
+import SheetVisionTechStack from "../components/ui/minor-sections/SheetVisionTechStack";
 import { motion } from "motion/react";
 
 const FeaturedProject = () => {

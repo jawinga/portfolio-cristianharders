@@ -4,7 +4,7 @@ export default function SheetVisionArchitecture() {
       {/* Title Section */}
       <div className="mb-6 sm:mb-8">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#fefffe] mb-3 sm:mb-4">
-          Tech Stack
+          Architecture
         </h2>
         <p className="text-xs sm:text-sm md:text-base text-[#b8b8b8] font-medium">
           Upload → Parse → Normalize → Adapt → Visualize → Export / Insights

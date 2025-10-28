@@ -90,8 +90,16 @@ const FeaturedProject = () => {
                 />
               </div>
             </div>
-
-            <div className="rounded-3xl bg-gray-600 w-380 h-100"></div>
+            <div className="rounded-3xl bg-gray-600 w-[500px] h-[300px] overflow-hidden shadow-lg">
+              <video
+                src="/public/assets/demo.mov"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              />
+            </div>{" "}
           </div>
 
           <SheetVisionArchitecture></SheetVisionArchitecture>

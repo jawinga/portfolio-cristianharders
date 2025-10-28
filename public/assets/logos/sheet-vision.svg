@@ -1,0 +1,30 @@
+<svg viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg" aria-label="Sheet + chart">
+  <!-- Background -->
+  <rect width="225" height="225" fill="#ffffff"/>
+
+  <!-- Bars (above the diagonal) -->
+  <rect x="70"  y="60"  width="34" height="35" fill="#a9c4ff"/>
+  <rect x="112" y="75"  width="38" height="60" fill="#f7a9ad"/>
+  <rect x="162" y="15"  width="40" height="120" fill="#a9c4ff"/>
+
+  <!-- Grid pattern for the spreadsheet area -->
+  <defs>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <rect width="28" height="28" fill="#34d399"/>
+      <!-- single-pixel-ish grid lines -->
+      <path d="M0 0H28M0 0V28" stroke="#ffffff" stroke-width="2"/>
+    </pattern>
+
+    <!-- Triangular clip for the sheet area (below the diagonal) -->
+    <clipPath id="sheetClip">
+      <!-- diagonal from top-left to near right/bottom, then around the bottom edge -->
+      <polygon points="0,0 200,160 225,225 0,225"/>
+    </clipPath>
+  </defs>
+
+  <!-- Spreadsheet triangle filled with the grid pattern -->
+  <rect width="225" height="225" fill="url(#grid)" clip-path="url(#sheetClip)"/>
+
+  <!-- Diagonal separator line -->
+  <path d="M0 0 L200 160" stroke="#ffffff" stroke-width="4" fill="none"/>
+</svg>

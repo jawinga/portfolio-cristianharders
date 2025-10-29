@@ -1,8 +1,5 @@
-import React from "react";
 import Navbar from "./sections/Navbar";
-import HeroText from "./components/ui/text/HeroText";
 import Hero from "./sections/Hero";
-import { Canvas } from "@react-three/fiber";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Experiences from "./sections/Experiences";
@@ -13,6 +10,7 @@ import { IntroDescription } from "./components/ui/minor-sections/IntroDescriptio
 import TechStackTerminal from "./components/ui/minor-sections/TechStackTerminal";
 import FlappyBirdEmbed from "./components/ui/minor-sections/FlappyBirdEmbed";
 import FeaturedProject from "./sections/FeaturedProject";
+import Footer from "./sections/Footer";
 
 const App = () => {
   function downloadCV() {
@@ -31,6 +29,7 @@ const App = () => {
       <Education></Education>
       <LetsConnect></LetsConnect>
       <FlappyBirdEmbed></FlappyBirdEmbed>
+      <Footer></Footer>
 
       <div
         className="

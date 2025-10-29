@@ -40,7 +40,7 @@ export default function TechStackTerminal() {
   return (
     <VisibilitySection className="w-full min-h-[50vh] flex flex-col items-center justify-center gap-6 pt-20">
       <LampContainer>
-        <h2 className="text-heading text-center text-6xl">
+        <h2 className="text-heading text-center text-6xl" id="stack">
           Technologies that <ColourfulText text={"Power "} /> my work
         </h2>
 

@@ -13,7 +13,7 @@ export function LetsConnect() {
   }
 
   return (
-    <div className="c-space section-spacing">
+    <div className="c-space section-spacing min-h-[60vh]">
       <VisibilitySection>
         <div className="flex flex-col lg:flex-row justify-between items-center px-6 py-10 md:px-10 md:py-14 rounded-2xl gap-10">
           {/* LEFT: text */}

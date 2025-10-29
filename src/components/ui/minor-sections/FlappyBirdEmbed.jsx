@@ -97,8 +97,8 @@ export default function FlappyBirdEmbed() {
 
       {/* Header */}
       <div className="w-full max-w-5xl mx-auto flex flex-col lg:items-center gap-10">
-        <div className="flex flex-row justify-between align-baseline items-center">
-          <h2 className="text-heading text-center text-4xl sm:text-5xl md:text-6xl leading-tight tracking-tight my-3">
+        <div className="flex flex-col lg:flex-row justify-between align-baseline items-center">
+          <h2 className="text-heading text-center md:text-center text-4xl sm:text-5xl md:text-6xl leading-tight tracking-tight my-5">
             Still around? I rebuilt Flappy Bird in Java!
           </h2>
           <img

@@ -41,7 +41,7 @@ const FeaturedProject = () => {
     <section className="-mx-[calc((100vw-100%)/2)] w-screen bg-[#651011] ">
       <div className="flex flex-col gap-7 py-10">
         {/* Header Section */}
-        <div className="flex flex-col gap-7 py-10">
+        <div className="flex flex-col py-10">
           <h3 className="text-heading text-center text-6xl">
             Featured Project
           </h3>
@@ -68,7 +68,7 @@ const FeaturedProject = () => {
 
       <div className="container mx-auto max-w-7xl">
         <div className="c-space section-spacing">
-          <div className="flex sm:flex-col md:flex-row items-center justify-center gap-8">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
             <div className="flex flex-col justify-start items-start max-w-xl text-left gap-2.5">
               <h4 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#fefffe] mb-3 sm:mb-4">
                 Summary
@@ -77,7 +77,7 @@ const FeaturedProject = () => {
                 Sheet Vision is an Angular-based web application that transforms
                 static Excel files into dynamic, data-driven dashboards.
               </p>
-              <div className="flex md:flex-col lg:flex-row gap-5">
+              <div className="flex lg:flex-row gap-5">
                 <Button
                   label="Check it out"
                   icon={GithubIcon}
@@ -99,7 +99,7 @@ const FeaturedProject = () => {
                 playsInline
                 className="w-full h-full object-cover"
               />
-            </div>{" "}
+            </div>
           </div>
 
           <SheetVisionArchitecture></SheetVisionArchitecture>

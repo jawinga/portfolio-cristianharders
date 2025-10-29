@@ -58,10 +58,7 @@ export const Timeline = ({ data }) => {
                 <h3>{item.date}</h3>
               </div>
               {item.contents.map((content, index) => (
-                <p
-                  className="mb-3 font-extrabold text-neutral-200 text-xl"
-                  key={index}
-                >
+                <p className="mb-3 mt-5 text-neutral-300 text-2xl" key={index}>
                   {content}
                 </p>
               ))}

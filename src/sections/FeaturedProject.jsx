@@ -81,12 +81,12 @@ const FeaturedProject = () => {
                 <Button
                   label="Check it out"
                   icon={GithubIcon}
-                  href="https://github.com/jawinga/FlappyBird"
+                  href="https://github.com/jawinga/sheet-vision-app"
                 />
                 <Button
                   label="Try it out!"
                   icon={VercelIcon}
-                  href="https://github.com/jawinga/FlappyBird"
+                  href="https://sheet-vision-app-git-main-cristians-projects-399d0222.vercel.app/"
                 />
               </div>
             </div>

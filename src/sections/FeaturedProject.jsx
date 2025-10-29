@@ -92,7 +92,7 @@ const FeaturedProject = () => {
             </div>
             <div className="rounded-3xl bg-gray-600 w-[500px] h-[300px] overflow-hidden shadow-lg">
               <video
-                src="/public/assets/demo.mp4"
+                src="/assets/demo.mp4"
                 autoPlay
                 loop
                 muted

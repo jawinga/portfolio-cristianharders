@@ -14,7 +14,7 @@ import Footer from "./sections/Footer";
 
 const App = () => {
   function downloadCV() {
-    document.getElementById("id").href = "/public/assets/cv-oct-2025.pdf";
+    // document.getElementById("id").href = "/public/assets/cv-oct-2025.pdf";
   }
 
   return (

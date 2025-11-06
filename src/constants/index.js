@@ -9,7 +9,7 @@ export const myProjects = [
       "Authentication is managed by Clerk Authentication for user managemement ",
       "Create notes with 'Title', new or Reusable 'Tags' and its content.",
       "Edit notes after creation and mark notes as favourites",
-      "Search tags and notes through input"
+      "Search tags and notes through input",
     ],
     href: "https://github.com/jawinga/note-taking-app",
     logo: "",
@@ -36,7 +36,6 @@ export const myProjects = [
         name: "Tailwind CSS",
         path: "/assets/logos/dotnet.svg",
       },
-      
     ],
   },
   {
@@ -48,7 +47,6 @@ export const myProjects = [
       "Users can change the stages of the job: Applied, Interviewing, Offer and Rejected.",
       "Added DnD library so user can drag cards between stages.",
       "Cards change colour dynamincally based on status.",
-
     ],
     href: "https://github.com/jawinga/job-search-manag",
     demo: "https://job-search-manag-1etg.vercel.app/",
@@ -85,18 +83,13 @@ export const myProjects = [
         name: "ESLint",
         path: "/assets/logos/dotnet.svg",
       },
-      
     ],
   },
   {
     id: 3,
     title: "Boxing Website",
-    description:
-      "Responsive Boxing Website with modern UI",
-    subDescription: [
-    
-
-    ],
+    description: "Responsive Boxing Website with modern UI",
+    subDescription: [],
     href: "https://github.com/jawinga/boxingSite",
     demo: "",
     logo: "",
@@ -104,7 +97,7 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "HTML", 
+        name: "HTML",
         path: "/assets/logos/csharp.svg",
       },
       {
@@ -117,21 +110,17 @@ export const myProjects = [
         name: "JavaScript",
         path: "/assets/logos/dotnet.svg",
       },
-      
-      
     ],
   },
   {
     id: 4,
     title: "Search Github Users",
-    description:
-      "Simple web application to search Github Users through API",
+    description: "Simple web application to search Github Users through API",
     subDescription: [
       "Enter any Github username to fetch live data frok the Github API",
       "Responsive UI with beautiful design.",
       "Users can change between light or dark UI mode.",
       "Built using the Github REST API that focuses on async data fetching and error handling.",
-
     ],
     href: "https://github.com/jawinga/search-users",
     demo: "",
@@ -153,8 +142,6 @@ export const myProjects = [
         name: "Tailwind CSS",
         path: "/assets/logos/dotnet.svg",
       },
-      
-      
     ],
   },
 ];
@@ -183,13 +170,13 @@ export const experiences = [
     job: "MSM Malaga Consulting",
     date: "February 2025 - June 2025",
     contents: [
-      "Developed and maintained responsive web applications using Next.js, React, Angular and SCSS.",
+      "Developed and maintained responsive web applications primarily using Angular 17+ and Next.js in Agile (Scrum) environments.",
+      "Implemented reactive components with RxJS, unit testing with Jasmine, and Node.js (Express) endpoints for API integration.",
       "Contributed to the redesign and rebranding of a local boxing club’s website, applying UX/UI best practices.",
       "Participated in code reviews and pair programming, improving code quality and team workflow.",
-      "Applied component-based architecture and scalable styling practices to ensure long-term maintainability, reducing the company website’s homepage codebase by 25%."
-      
+      "Applied component-based architecture and scalable styling practices to ensure long-term maintainability, reducing the company website’s homepage codebase by 25%.",
     ],
-    logo: "/assets/msm-logo.jpeg"
+    logo: "/assets/msm-logo.jpeg",
   },
   {
     title: "English Teacher",
@@ -197,11 +184,9 @@ export const experiences = [
     date: "June 2023-October 2024",
     contents: [
       "Taught English to students of various levels, focusing on conversation, grammar, and writing skills.",
-    "Prepared personalized lessons and activities to enhance fluency and confidence.",
-
+      "Prepared personalized lessons and activities to enhance fluency and confidence.",
     ],
-    logo: "/assets/campus-ingles.webp"
-
+    logo: "/assets/campus-ingles.webp",
   },
   {
     title: "UX/UI Designer - Part Time",
@@ -211,8 +196,8 @@ export const experiences = [
       "Worked with international designers to redesign digital products for real clients such as Wim Hof App and My Place Home Exchange.",
       "Collaborated in cross-functional design sprints using Figma and UX best practices.",
       "Conducted user interviews, competitive analysis, and usability testing.",
-      "Presented final prototypes to product teams in an international environment."
+      "Presented final prototypes to product teams in an international environment.",
     ],
-    logo: "/assets/memorisely_logo.jpeg"
+    logo: "/assets/memorisely_logo.jpeg",
   },
 ];

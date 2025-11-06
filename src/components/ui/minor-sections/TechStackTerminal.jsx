@@ -52,8 +52,8 @@ export default function TechStackTerminal() {
           </TypingAnimation>
           {shouldAnimate && (
             <AnimatedSpan delay={1000}>
-              React ⚛️, Next.js 🔺, Angular 🅰️, TypeScript 🟦, SCSS 🎨, Tailwind
-              CSS 💨
+              Angular 🅰️, TypeScript 🟦, RxJS 🟣, React ⚛️, Next.js 🔺, SCSS 🎨,
+              Tailwind CSS 💨
             </AnimatedSpan>
           )}
 
@@ -62,7 +62,8 @@ export default function TechStackTerminal() {
           </TypingAnimation>
           {shouldAnimate && (
             <AnimatedSpan delay={2500}>
-              Java (Spring Boot) ☕, Node.js 🟩, MySQL 🗄️, JWT 🔐
+              Java (Spring Boot) ☕, Node.js (Express) 🟩, REST APIs 📉, MySQL
+              🗄️, MongoDB 🦖 , JWT 🔐
             </AnimatedSpan>
           )}
 
@@ -80,8 +81,9 @@ export default function TechStackTerminal() {
           </TypingAnimation>
           {shouldAnimate && (
             <AnimatedSpan delay={4600}>
-              Git/GitHub 🧠, Docker 🐳, Netlify/Vercel 🚀, npm/pnpm/yarn 📦,
-              Vite ⚡, ESLint/Prettier ✨, VSCode 💻, IntelliJ ☕
+              Git/GitHub 🧠, Github Actions 🐈, Docker 🐳, Netlify/Vercel 🚀,
+              npm/pnpm/yarn 📦, Vite ⚡, ESLint/Prettier ✨, VSCode 💻, IntelliJ
+              ☕
             </AnimatedSpan>
           )}
 
@@ -91,7 +93,7 @@ export default function TechStackTerminal() {
           {shouldAnimate && (
             <AnimatedSpan delay={5700}>
               Figma 🎨, Adobe XD 🧠, UX & accessibility ♿, prototyping 🧩,
-              usability testing 🔍
+              usability testing 🔍, WCAG 2.2 AA
             </AnimatedSpan>
           )}
 

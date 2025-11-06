@@ -4,8 +4,8 @@ import { TextGenerateEffect } from "../components/ui/text/TextGenerateEffect";
 import { LampContainer } from "../components/ui/misc/LampContainer";
 
 const About = () => {
-  const intro = `Bilingual Frontend Developer (EN/ES) skilled in React,
-   Angular, and TypeScript. I build scalable, responsive applications
+  const intro = `Bilingual Frontend Developer (EN/ES) skilled in Angular,
+   React, and TypeScript. I build scalable, responsive applications
     with a UX-first approach and CI/CD best practices, improving
      maintainability by 25% across client and personal projects.`;
 

@@ -23,8 +23,9 @@ const App = () => {
       <Hero></Hero>
       <About></About>
       <TechStackTerminal></TechStackTerminal>
-      <Projects></Projects>
       <FeaturedProject></FeaturedProject>
+
+      <Projects></Projects>
       <Experiences></Experiences>
       <Education></Education>
       <LetsConnect></LetsConnect>

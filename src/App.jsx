@@ -13,9 +13,9 @@ import FeaturedProject from "./sections/FeaturedProject";
 import Footer from "./sections/Footer";
 
 const App = () => {
-  function downloadCV() {
-    // document.getElementById("id").href = "/public/assets/cv-oct-2025.pdf";
-  }
+  // function downloadCV()
+  //   // document.getElementById("id").href = "/public/assets/cv-oct-2025.pdf";
+  // }
 
   return (
     <div className="container mx-auto max-w-7xl">

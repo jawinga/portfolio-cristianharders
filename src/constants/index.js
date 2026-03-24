@@ -166,6 +166,18 @@ export const mySocials = [
 
 export const experiences = [
   {
+    title: "AI / Software Developer",
+    job: "Mercedes-Benz",
+    date: "2025 - Present",
+    contents: [
+      "Developing AI-powered tools and internal software solutions as part of the digital transformation initiatives.",
+      "Building and integrating AI agents using Claude SDK, LangChain, and Strands Agents frameworks.",
+      "Automating workflows with n8n and connecting AI capabilities to enterprise systems via AWS services.",
+      "Collaborating with cross-functional teams to design and deliver scalable, production-ready AI features.",
+    ],
+    logo: "/assets/mercedes-logo.svg",
+  },
+  {
     title: "Frontend Developer Intern",
     job: "MSM Malaga Consulting",
     date: "February 2025 - June 2025",

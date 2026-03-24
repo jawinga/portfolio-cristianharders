@@ -98,11 +98,22 @@ export default function TechStackTerminal() {
           )}
 
           <TypingAnimation start={shouldAnimate} delay={6500} cps={36}>
-            $ cristian stack --describe
+            $ cristian stack --show ai
           </TypingAnimation>
           {shouldAnimate && (
             <AnimatedSpan delay={6800}>
-              Building reliable, scalable, and user-centered web applications ✨
+              Python 🐍, Claude SDK 🤖, LangChain 🦜, Strands Agents 🧠, n8n
+              ⚙️, AWS (Lambda · S3 · Bedrock) ☁️
+            </AnimatedSpan>
+          )}
+
+          <TypingAnimation start={shouldAnimate} delay={7600} cps={36}>
+            $ cristian stack --describe
+          </TypingAnimation>
+          {shouldAnimate && (
+            <AnimatedSpan delay={7900}>
+              Building intelligent, scalable applications — where great UX meets
+              AI ✨
             </AnimatedSpan>
           )}
         </Terminal>

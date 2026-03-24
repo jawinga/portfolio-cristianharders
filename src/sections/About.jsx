@@ -4,10 +4,10 @@ import { TextGenerateEffect } from "../components/ui/text/TextGenerateEffect";
 import { LampContainer } from "../components/ui/misc/LampContainer";
 
 const About = () => {
-  const intro = `Bilingual Frontend Developer (EN/ES) skilled in Angular,
-   React, and TypeScript. I build scalable, responsive applications
-    with a UX-first approach and CI/CD best practices, improving
-     maintainability by 25% across client and personal projects.`;
+  const intro = `Software Developer transitioning into AI — currently at Mercedes-Benz,
+   building intelligent tools with Claude SDK, LangChain, and Strands Agents.
+    Frontend-strong in Angular, React, and TypeScript, now expanding into
+     Python, AWS, and agentic systems to bridge great UX with AI.`;
 
   return (
     <BackgroundBeamsWithCollision className="flex flex-col c-space section-spacing py-30">
